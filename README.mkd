@@ -1,0 +1,9 @@
+# kal-vim
+
+Vim syntax highlight from [Kal](https://github.com/rzimmerman/kal). Still work
+in progress, waiting for your pullrequest <3
+
+## Install
+
+[Vundle](https://github.com/gmarik/vundle) or
+[pathogen.vim](https://github.com/tpope/vim-pathogen) is your friend.
