@@ -1,0 +1,11 @@
+task o(arg)
+    return arg * 2
+
+function dwd(arg)
+    return arg * 3
+
+
+pause for 2
+pause for 5 seconds
+
+wait for x from o

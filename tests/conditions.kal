@@ -1,0 +1,12 @@
+if name is 'Steve'
+    print 'Steve'
+else if name is 'Brian'
+    print 'Brian'
+otherwise when name is 'Joe'
+    print 'Joe'
+else
+    print 'Somebody'
+
+print 5 if 5 >= 10
+
+(print(5) if name is 'Joe') otherwise 6

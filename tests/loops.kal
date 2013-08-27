@@ -1,0 +1,18 @@
+for x in [1, 2, 3]
+    print x
+
+obj = {a: 1, b: 2}
+for key of obj
+    print key, obj[key]
+
+for parallel x in y
+    wait for z from f(x)
+
+for series x in y
+    wait for z from f(x)
+
+
+x = 0
+while x < 5
+    x += 1
+    print x

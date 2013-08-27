@@ -1,0 +1,23 @@
+class Person
+  method initialize(name)
+    me.name = name
+  method printName()
+    print me.name
+  method nameLength()
+    return me.name.length
+
+jen = new Person('Jen')
+jen.printName() # prints 'Jen'
+print(jen instanceof Person) # prints true
+
+class FrumpyPerson inherits from Person
+  method printName()
+    print 'Frumpy ' + me.name
+  method nameLength()
+    return 0
+
+sue = new FrumpyPerson('Sue')
+sue.printName() # prints 'Frumpy Sue'
+print(sue instanceof Person) # prints true
+print(sue instanceof FrumpyPerson) # prints true
+print(jen instanceof FrumpyPerson) # prints false

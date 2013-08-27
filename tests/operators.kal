@@ -1,0 +1,40 @@
+a = b = c = null
+
+print a or b nor c
+
+print b and a but c
+
+print a xor a bitwise xor b
+
+print bitwise not a
+print bitwise or a
+print bitwise and a
+
+print 1 + 2 * 4 - 5 / 6 mod 12
+
+if exists d
+    print 42
+else if doesnt exists
+    print 'nah'
+
+print c?()
+
+if a >= b
+    print c
+else if a < c
+    print a
+else if b <= c
+    print b
+else if c > a
+    print c
+else if a is c
+    print 'a == c'
+else if b != c
+    print 'b != c'
+else if c == b
+    print 'b == c'
+else if b isnt a + b
+    print 'b != a + b'
+
+if a instanceof {}
+    print 'a is {}'

@@ -1,0 +1,9 @@
+if this.isMale is true
+    print 123
+
+if me.status is on
+    print 'foobar'
+else if me.pocket is empty
+    print 'nah'
+else if me.name is undefined
+    print 'it\'s undefined'
