@@ -15,18 +15,9 @@ syn keyword kalOperator or
 syn keyword kalOperator nor
 syn keyword kalOperator not
 syn match kalOperator "\(bitwise\s\)\=\(xor\|and\|or\|not\)"
-syn match kalOperator "\v\*"
-syn match kalOperator "\v/"
-syn match kalOperator "\v\+"
-syn match kalOperator "\v-"
 syn keyword kalOperator mod
-syn match kalOperator "\v^"
-syn match kalOperator "\v\?"
 syn match kalOperator "\(doesnt \)\=exists"
 syn keyword kalOperator is isnt
-syn match kalOperator "\(=\|\!\)\=="
-syn match kalOperator ">=\="
-syn match kalOperator "<=\="
 syn keyword kalOperator in
 syn keyword kalOperator of
 syn keyword kalOperator instanceof
