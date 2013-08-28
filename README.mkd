@@ -7,3 +7,8 @@ in progress, waiting for your pullrequest <3
 
 [Vundle](https://github.com/gmarik/vundle) or
 [pathogen.vim](https://github.com/tpope/vim-pathogen) is your friend.
+
+
+## TODO
+
+* indent (using coffee's [indent](https://raw.github.com/kchmck/vim-coffee-script/master/indent/coffee.vim) is ok, but not perfect)
