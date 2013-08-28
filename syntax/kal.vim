@@ -1,13 +1,13 @@
 " Vim syntax file
 " Language:	Kal
 " Maintainer:	hbc <bcxxxxxx@gmail.com>
-" Last Change:	2013 Aug 27
+" Last Change:	2013 Aug 28
 
-if exists("b:current_syntax")
+if version < 600
+    syntax clear
+elseif exists("b:current_syntax")
     finish
 endif
-
-let b:current_syntax = "kal"
 
 " Operators
 syn keyword kalOperator and but
@@ -22,7 +22,6 @@ syn keyword kalOperator in
 syn keyword kalOperator of
 syn keyword kalOperator instanceof
 syn keyword kalOperator print
-
 
 " Constants
 syn match kalNumber "-\=\<\d\+L\=\>\|0[xX][0-9a-fA-F]\+\>"
@@ -67,13 +66,23 @@ syn match kalStatement "\v(wait|pause)\s{1}for"
 syn keyword kalStatement from
 syn keyword kalStatement try catch
 
-hi link kalString String
-hi link kalConstant Identifier
-hi link kalNumber Number
-hi link kalOperator Operator
-hi link kalComment Comment
-hi link kalKeyword Keyword
-hi link kalRepeat Repeat
-hi link kalConditional Conditional
-hi link kalStatement Statement
-hi link kalFunction Function
+if version >= 508
+    command -nargs=+ HiLink hi link <args>
+else
+    command -nargs=+ HiLink hi def link <args>
+endif
+
+HiLink kalString String
+HiLink kalConstant Identifier
+HiLink kalNumber Number
+HiLink kalOperator Operator
+HiLink kalComment Comment
+HiLink kalKeyword Keyword
+HiLink kalRepeat Repeat
+HiLink kalConditional Conditional
+HiLink kalStatement Statement
+HiLink kalFunction Function
+
+delcommand HiLink
+
+let b:current_syntax = "kal"
