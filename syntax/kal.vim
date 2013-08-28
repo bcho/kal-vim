@@ -61,19 +61,18 @@ syn match kalRepeat "for\s*\(parallel\|series\)\="
 syn keyword kalRepeat while
 
 " Class
-syn keyword kalStatement class
-syn keyword kalStatement method
+syn keyword kalStatement class method nextgroup=kalFunction skipwhite
 syn keyword kalStatement new
 syn match kalStatement "inherits from"
 
 " Functions & Tasks
-syn keyword kalStatement function method task
+syn keyword kalStatement function task nextgroup=kalFunction skipwhite
 syn keyword kalStatement return
 syn match kalFunction
-    \ "\%(\%(function\s\|task\s\|class\s\|method\s\)\s*\)\@<=\h\%(\w\)*/" contained
+    \ "\%(\%(method\s\|class\s\|function\s\|task\s\)\s*\)\@<=\h\%(\w\)*" contained
 
 " Other Statements
-syn match kalStatement "\(wait\|pause\)\s\{1}for"
+syn match kalStatement "\v(wait|pause)\s{1}for"
 syn keyword kalStatement from
 syn keyword kalStatement try catch
 
@@ -86,5 +85,4 @@ hi link kalKeyword Keyword
 hi link kalRepeat Repeat
 hi link kalConditional Conditional
 hi link kalStatement Statement
-" FIXME no highlighting?
 hi link kalFunction Function
